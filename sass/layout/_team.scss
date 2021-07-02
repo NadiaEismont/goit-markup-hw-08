@@ -1,0 +1,45 @@
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  &__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &__member {
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.19;
+    color: $title-text-color;
+    font-weight: 500;
+  }
+  &__prof {
+    font-size: 16px;
+    line-height: 1.19;
+    color: $primary-text-color;
+  }
+  &__description {
+    text-align: center;
+    align-self: auto;
+  }
+}
+
+.team > {
+  .team__description {
+    flex-basis: calc((100% - 120px) / 4);
+    background: $white;
+    box-shadow: $button-shadow;
+    border-radius: 4px;
+  }
+}
+
+.team > {
+  .team__description {
+    margin-left: 30px;
+    align-items: center;
+  }
+}
+.team__description:nth-child(1) {
+  margin-left: 0;
+}
