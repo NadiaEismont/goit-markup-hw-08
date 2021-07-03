@@ -103,6 +103,18 @@ footer {
   align-items: center;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .container {
+    width: 780px;
+  }
+}
+
 .container__title {
   font-weight: 700;
   font-size: 36px;
