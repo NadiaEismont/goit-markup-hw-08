@@ -96,8 +96,8 @@ footer {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   align-items: center;
@@ -109,7 +109,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 780px;
   }
@@ -122,6 +122,23 @@ footer {
 }
 
 .container__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .container__title {
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+  }
+}
+
+.work__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;

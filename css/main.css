@@ -96,8 +96,8 @@ footer {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   align-items: center;
@@ -109,7 +109,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 780px;
   }
@@ -122,6 +122,23 @@ footer {
 }
 
 .container__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .container__title {
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+  }
+}
+
+.work__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -637,37 +654,89 @@ textarea:hover {
 }
 
 .hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
   background: #2f303a;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  align-items: center;
-}
-
-.hero__title {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
   outline: 1px solid #C4C4C4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero.jpg");
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-tel.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 480px), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url("../image/hero-tel2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background-size: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url("../image/hero-tablet.jpg");
+    background-size: 768px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url("../image/hero-tablet2x.jpg");
+    background-size: 768px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    align-items: center;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../image/hero-desktop2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
 .profile {
@@ -760,6 +829,13 @@ textarea:hover {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .work__media,
+  .work__title {
+    display: none;
+  }
 }
 
 .team {
