@@ -660,7 +660,7 @@ textarea:hover {
   background: #2f303a;
   text-align: center;
   outline: 1px solid #C4C4C4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-tel.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-tel.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -668,7 +668,7 @@ textarea:hover {
 
 @media (min-device-pixel-ratio: 2) and (min-width: 480px), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url("../image/hero-tel2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-tel2x.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -683,7 +683,7 @@ textarea:hover {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url("../image/hero-tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-tablet.jpg");
     background-size: 768px;
     background-position: center;
     background-repeat: no-repeat;
@@ -693,7 +693,7 @@ textarea:hover {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url("../image/hero-tablet2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/hero-tablet2x.jpg");
     background-size: 768px;
     background-position: center;
     background-repeat: no-repeat;
@@ -724,18 +724,23 @@ textarea:hover {
   }
 }
 
+.hero__title {
+  font-style: normal;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 @media screen and (min-width: 1200px) {
   .hero__title {
-    font-style: normal;
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 30px;
-    text-align: center;
   }
 }
 
