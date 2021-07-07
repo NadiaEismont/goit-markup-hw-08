@@ -1146,13 +1146,14 @@ textarea:hover {
 }
 
 .mobile-nav .container {
-  position: relative;
-  padding-top: 40px;
+  position: fixed;
+  padding-top: 48px;
   padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 100px;
+  height: 100%;
+  width: 100vw;
 }
 
 .menu__close {
@@ -1165,10 +1166,15 @@ textarea:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
   line-height: 1.175;
   text-align: center;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 479px) {
+  .menu__link {
+    font-size: 8vw;
+  }
 }
 
 .menu__list, .menu__mail {
@@ -1194,5 +1200,9 @@ textarea:hover {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
+}
+
+.networks__list:not(:last-child) {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */
