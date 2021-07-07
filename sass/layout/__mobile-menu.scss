@@ -1,0 +1,59 @@
+.mobile-nav {
+    position: absolute;
+    background-color: $white;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    .container{
+        position: relative;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100px;
+    }
+}
+.menu{
+&__close{
+    position: absolute;
+    right: 25px;
+    top: 21px;
+}
+&__link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    text-align: center;
+    letter-spacing: 0.02em;
+   
+}
+&__list,
+&__mail {
+    margin-bottom: 32px;
+}
+}
+.link--menu__mail{
+    font-family: Roboto;
+font-weight: 500;
+font-size: 34px;
+line-height: 1.17;
+letter-spacing: 0.02em;
+color: $primary-text-color;
+}
+
+.networks{
+    display: flex;
+ 
+
+&__link {
+    color: $accent-color;
+    font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.02em;
+}
+}

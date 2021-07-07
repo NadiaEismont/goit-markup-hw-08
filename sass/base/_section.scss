@@ -1,9 +1,16 @@
 .section {
-  padding-bottom: 94px;
+  
+padding-top: 60px;
+padding-bottom: 60px;
+@media screen and (min-width: 1200px){
+padding-bottom: 94px;
   padding-top: 94px;
+}
 }
 .section--zero-pdng {
   padding-top: 0;
+  @media screen and (min-width: 768px){
+    display: none;}
 }
 .section--purple {
   background: $button-portfolio;

@@ -28,7 +28,7 @@
     <header class="container">
       <nav class="nav">
         <a href="" class="logo"><span class="logo__accent">Web</span>Studio</a>
-        <ul class="nav__list">
+        <!-- <ul class="nav__list">
           <li class="nav__header">
             <a href="" class="link current">Студия</a>
           </li>
@@ -58,7 +58,60 @@
               >
             </li>
           </ul>
+        </div> -->
+    
+      <button type="button" class="menu__open">
+        <svg class="connection__icons" width="24" height="16">
+          <use href="./icons/sprite.svg#button-header-mob"></use>
+        </svg>
+      </button>
+      <div class="mobile-nav">
+        <div class="container">
+        <button type="button"  class="menu__close">x</button>
+        <nav>
+          <ul class="menu__nav"> 
+            <li class="menu__list">
+              <a href="" class="menu__link">Студия</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link">Портфолио</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__bottom">
+            <ul class="menu__contacts"> 
+              <li class="menu__mail">
+                <a href="meilto:info@devstudio.com" class="link link--menu__mail">
+                              info@devstudio.com</a
+                >
+              </li>
+              <li class="menu__mail">
+                <a href="tel:+380961111111" class="link link--menu__mail" >
+                            +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+
+            <ul class="networks"> 
+              <li class="networks__list">
+                <a href="" class="networks__link link">Instagram</a>
+              </li>
+              <li class="networks__list">
+                <a href="" class="networks__link link">Twitter</a>
+              </li>
+              <li class="networks__list">
+                <a href="" class="networks__link link">Facebook</a>
+              </li>
+              <li class="networks__list">
+                <a href="" class="networks__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
       </nav>
     </header>
     <main>
@@ -214,7 +267,7 @@
           <h2 class="container__title">Наша команда</h2>
           <ul class="team">
             <li class="team__description">
-              <img src="./image/team1.jpg" alt="team member" width="270" />
+              <img src="./image/team1.jpg" alt="team member" class="team__photo" />
               <div class="team__content">
                 <h3 class="team__member">Игорь Демьяненко</h3>
                 <p class="team__prof">Product Designer</p>
@@ -251,7 +304,7 @@
               </div>
             </li>
             <li class="team__description">
-              <img src="./image/team2.jpg" alt="team member" width="270" />
+              <img src="./image/team2.jpg" alt="team member" class="team__photo" />
               <div class="team__content">
                 <h3 class="team__member">Ольга Репина</h3>
                 <p class="team__prof">Frontend Developer</p>
@@ -288,7 +341,7 @@
               </div>
             </li>
             <li class="team__description">
-              <img src="./image/team3.jpg" alt="team member" width="270" />
+              <img src="./image/team3.jpg" alt="team member" class="team__photo" />
               <div class="team__content">
                 <h3 class="team__member">Николай Тарасов</h3>
                 <p class="team__prof">Marketing</p>
@@ -325,7 +378,7 @@
               </div>
             </li>
             <li class="team__description">
-              <img src="./image/team4.jpg" alt="team member" width="270" />
+              <img src="./image/team4.jpg" alt="team member" class="team__photo" />
               <div class="team__content">
                 <h3 class="team__member">Михаил Ермаков</h3>
                 <p class="team__prof">UI Designer</p>
@@ -364,7 +417,7 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <!-- <section class="section">
         <h2 class="container__title">Постоянные клиенты</h2>
         <div class="container">
           <ul class="customers">
@@ -407,11 +460,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!--copyrihgting-->
-    <footer>
+    <!-- <footer>
       <div class="container footer">
         <div class="">
           <a class="link logo" href="./index.html">
@@ -483,7 +536,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="./js/modal.js"></script>
     <script>
       (() => {

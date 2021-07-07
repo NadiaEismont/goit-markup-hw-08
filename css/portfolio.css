@@ -105,19 +105,19 @@ footer {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 780px;
+    max-width: 780px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -148,12 +148,25 @@ footer {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .section--zero-pdng {
   padding-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section--zero-pdng {
+    display: none;
+  }
 }
 
 .section--purple {
@@ -169,6 +182,8 @@ footer {
   color: black;
   letter-spacing: 0.03em;
   margin: auto 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo__accent {

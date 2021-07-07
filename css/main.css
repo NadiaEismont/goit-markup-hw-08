@@ -105,19 +105,19 @@ footer {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 780px;
+    max-width: 780px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -148,12 +148,25 @@ footer {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 
 .section--zero-pdng {
   padding-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section--zero-pdng {
+    display: none;
+  }
 }
 
 .section--purple {
@@ -466,6 +479,8 @@ textarea:hover {
   color: black;
   letter-spacing: 0.03em;
   margin: auto 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo__accent {
@@ -745,20 +760,34 @@ textarea:hover {
 }
 
 .profile {
-  width: 1200 px;
+  width: 100%;
   /* padding: 94px 0; */
   margin: 0 auto;
-  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .profile__title {
-  font-weight: 500;
+  text-align: center;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: #212121;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .profile__title {
+    text-align: left;
+  }
 }
 
 .profile__info {
@@ -769,12 +798,24 @@ textarea:hover {
   color: #757575;
 }
 
-.profile__block:not(:last-child) {
-  margin-right: 30px;
+.profile__block:not(:last-child) .profile__info {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .profile__block {
+    flex-basis: calc((100% - 30px)/2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .profile__block {
+    flex-basis: calc((100% - 90px)/4);
+  }
 }
 
 .profile__block::before {
-  display: block;
+  display: flex;
   content: "";
   background-size: 65.32px 70px;
   background-repeat: no-repeat;
@@ -836,7 +877,7 @@ textarea:hover {
   margin: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .work__media,
   .work__title {
     display: none;
@@ -844,8 +885,17 @@ textarea:hover {
 }
 
 .team {
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    justify-content: space-between;
+  }
 }
 
 .team__content {
@@ -863,6 +913,7 @@ textarea:hover {
 }
 
 .team__prof {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   color: #757575;
@@ -873,20 +924,29 @@ textarea:hover {
   align-self: auto;
 }
 
-.team > .team__description {
-  flex-basis: calc((100% - 120px) / 4);
+.team__photo {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.team__description {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 
-.team > .team__description {
-  margin-left: 30px;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .team__description {
+    flex-basis: calc((100% - 30px)/2);
+  }
 }
 
-.team__description:nth-child(1) {
-  margin-left: 0;
+@media screen and (min-width: 1200px) {
+  .team__description {
+    flex-basis: calc((100% - 90px)/4);
+  }
 }
 
 .customers {
@@ -1076,4 +1136,63 @@ textarea:hover {
 /* .profile-block:hover::before {
   border: 1px solid $accent-color;
 } */
+.mobile-nav {
+  position: absolute;
+  background-color: #ffffff;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+}
+
+.mobile-nav .container {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100px;
+}
+
+.menu__close {
+  position: absolute;
+  right: 25px;
+  top: 21px;
+}
+
+.menu__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.menu__list, .menu__mail {
+  margin-bottom: 32px;
+}
+
+.link--menu__mail {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.networks {
+  display: flex;
+}
+
+.networks__link {
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+}
 /*# sourceMappingURL=main.css.map */
