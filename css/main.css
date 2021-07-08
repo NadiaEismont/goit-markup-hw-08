@@ -569,6 +569,34 @@ textarea:hover {
   background-color: #2196f3;
 }
 
+.menu__open {
+  display: inline-block;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.menu__open:hover, .menu__open:focus {
+  stroke: #2196f3;
+}
+
+.menu__close {
+  display: inline-block;
+  border-color: transparent;
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+}
+
+.menu__close::before {
+  background: url(../icons/close_24px-hover.svg);
+  display: block;
+  transform: translateX(100%);
+}
+
+.menu__close::before::after:hover {
+  transform: translateX(0);
+}
+
 /* navigation */
 .nav {
   display: flex;
@@ -590,6 +618,12 @@ textarea:hover {
   margin-left: 93px;
 }
 
+@media screen and (max-width: 767px) {
+  .nav__list {
+    display: none;
+  }
+}
+
 .connection__list {
   display: flex;
   margin-left: 0;
@@ -597,6 +631,12 @@ textarea:hover {
   padding-left: 0;
   list-style: none;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .connection__list {
+    display: none;
+  }
 }
 
 .nav__list > .nav__header:not(:last-child) {
@@ -607,7 +647,8 @@ textarea:hover {
   margin-right: 50px;
 }
 
-.nav__list .current {
+.nav__list .current,
+.menu__list .current {
   color: #2196f3;
 }
 
@@ -664,8 +705,20 @@ textarea:hover {
   /* transform: translateY(28px); */
 }
 
+@media screen and (max-width: 767px) {
+  .current::after {
+    display: none;
+  }
+}
+
 .current:hover::after, .current:focus::after {
   transform: scale(1.5);
+}
+
+@media screen and (min-width: 768px) {
+  .menu__open {
+    display: none;
+  }
 }
 
 .hero {
@@ -1140,11 +1193,12 @@ textarea:hover {
   position: fixed;
   background-color: #ffffff;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  left: 0;
   z-index: 2;
   transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-nav .container {
@@ -1154,6 +1208,8 @@ textarea:hover {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
 
 .mobile-nav.is-open {

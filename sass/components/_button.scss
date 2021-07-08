@@ -1,74 +1,101 @@
 .button {
-  display: inline-block;
-  color: $white;
-  background-color: $button-color;
-  font-size: 16px;
-  line-height: 1.88;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  padding: 10px 32px;
-
-  font-family: inherit;
-  cursor: pointer;
-  border-radius: 4px;
-  border-color: transparent;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-  }
+    display: inline-block;
+    color: $white;
+    background-color: $button-color;
+    font-size: 16px;
+    line-height: 1.88;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 10px 32px;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 4px;
+    border-color: transparent;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
 }
 
 .button-port {
-  display: inline-block;
-  color: $title-text-color;
-  background-color: $button-portfolio;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding: 10px 32px;
-  font-family: inherit;
-  cursor: pointer;
-  border-radius: 4px;
-  height: 38px;
-  min-width: 73px;
-  left: 495px;
-  padding: 6px 22px;
-
-  border-color: transparent;
-  transition-property: box-shadow, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-    color: $white;
-    box-shadow: $button-shadow;
-  }
+    display: inline-block;
+    color: $title-text-color;
+    background-color: $button-portfolio;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 10px 32px;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 38px;
+    min-width: 73px;
+    left: 495px;
+    padding: 6px 22px;
+    border-color: transparent;
+    transition-property: box-shadow, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $white;
+        box-shadow: $button-shadow;
+    }
 }
+
 .sbscrb__button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-  background-color: $button-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: $white;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  border-color: transparent;
-  fill: currentColor;
-  margin-right: 10px;
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-  }
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: $button-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border-color: transparent;
+    fill: currentColor;
+    margin-right: 10px;
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.menu__open {
+    display: inline-block;
+    border-color: transparent;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+        stroke: $accent-color;
+    }
+}
+
+.menu__close {
+    display: inline-block;
+    border-color: transparent;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    &:hover {}
+    // &:focus {
+    //     stroke: $accent-color;
+    // }
+}
+
+.menu__close::before {
+    background: url(../icons/close_24px-hover.svg);
+    display: block;
+    transform: translateX(100%);
+    &::after:hover {
+        transform: translateX(0);
+    }
 }

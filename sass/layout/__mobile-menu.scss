@@ -8,6 +8,7 @@
     height: 100vh;
     z-index: 2;
     transform: translateX(100%);
+    @include transition_1;
     .container {
         position: relative;
         padding-top: 48px;
