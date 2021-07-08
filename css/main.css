@@ -1137,29 +1137,37 @@ textarea:hover {
   border: 1px solid $accent-color;
 } */
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   background-color: #ffffff;
   top: 0;
   width: 100vw;
   height: 100vh;
   left: 0;
+  z-index: 2;
+  transform: translateX(100%);
 }
 
 .mobile-nav .container {
-  position: fixed;
+  position: relative;
   padding-top: 48px;
   padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 100%;
-  width: 100vw;
+}
+
+.mobile-nav.is-open {
+  transform: translateX(0);
 }
 
 .menu__close {
   position: absolute;
   right: 25px;
   top: 21px;
+}
+
+.menu__contacts, .menu__nav {
+  width: 100%;
 }
 
 .menu__link {
@@ -1179,6 +1187,8 @@ textarea:hover {
 
 .menu__list, .menu__mail {
   margin-bottom: 32px;
+  text-align: left;
+  align-self: left;
 }
 
 .link--menu__mail {
