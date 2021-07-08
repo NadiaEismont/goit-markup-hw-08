@@ -279,25 +279,27 @@ footer {
 }
 
 .menu__open:hover, .menu__open:focus {
-  stroke: #2196f3;
+  fill: #2196f3;
 }
 
 .menu__close {
   display: inline-block;
   border-color: transparent;
   background-color: transparent;
-  width: 60px;
-  height: 60px;
+  height: 19px;
+  width: 19px;
+  z-index: 999;
+  background: url(../icons/x.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.menu__close::before {
+.menu__close:hover {
   background: url(../icons/close_24px-hover.svg);
-  display: block;
-  transform: translateX(100%);
-}
-
-.menu__close::before::after:hover {
-  transform: translateX(0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* navigation */
@@ -342,16 +344,33 @@ footer {
   }
 }
 
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .connection__list {
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .connection__mail {
+    margin-left: auto;
+  }
+}
+
 .nav__list > .nav__header:not(:last-child) {
   margin-right: 50px;
 }
 
-.connection__list > .connection__mail:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .connection__list > .connection__mail:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .nav__list .current,
-.menu__list .current {
+.menu__list .current,
+.menu__mail .current {
   color: #2196f3;
 }
 
@@ -378,14 +397,23 @@ footer {
   display: flex;
 }
 
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .connection__link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
 .connection__icons {
   margin-right: 10px;
   fill: currentColor;
   height: 16px;
 }
 
-.connection__mail:last-child {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .connection__mail:last-child {
+    margin-right: 50px;
+  }
 }
 
 .current {

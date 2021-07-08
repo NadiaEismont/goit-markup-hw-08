@@ -75,7 +75,7 @@
     background-color: transparent;
     &:hover,
     &:focus {
-        stroke: $accent-color;
+        fill: $accent-color;
     }
 }
 
@@ -83,19 +83,34 @@
     display: inline-block;
     border-color: transparent;
     background-color: transparent;
-    width: 60px;
-    height: 60px;
+    height: 19px;
+    width: 19px;
     &:hover {}
     // &:focus {
     //     stroke: $accent-color;
     // }
+    z-index: 999;
+    background: url(../icons/x.svg);
+    @include background-image;
 }
 
-.menu__close::before {
+.menu__close:hover {
     background: url(../icons/close_24px-hover.svg);
-    display: block;
-    transform: translateX(100%);
-    &::after:hover {
-        transform: translateX(0);
-    }
+    @include background-image;
 }
+
+// .menu__close::after {
+//     content: "";
+//     background: url(../icons/close_24px-hover.svg);
+//     display: block;
+//     height: 19px;
+//     width: 19px;
+//     transform: translateY(100%);
+//     @include background-image;
+//     &::after:hover {
+//         transform: translateY(0);
+//     }
+// }
+// .menu__close:hover::after {
+//     transform: translateX(0);
+// }

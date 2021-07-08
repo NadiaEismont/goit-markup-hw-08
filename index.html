@@ -21,18 +21,21 @@
 <body>
     <header class="container">
         <nav class="nav">
+
             <a href="" class="logo"><span class="logo__accent">Web</span>Studio</a>
-            <ul class="nav__list">
-                <li class="nav__header">
-                    <a href="" class="link current">Студия</a>
-                </li>
-                <li class="nav__header">
-                    <a href="./portfolio.html" class="link">Портфолио</a>
-                </li>
-                <li class="nav__header">
-                    <a href="#contacts" class="link">Контакты</a>
-                </li>
-            </ul>
+            <div class="main-nav">
+                <ul class="nav__list">
+                    <li class="nav__header">
+                        <a href="" class="link current">Студия</a>
+                    </li>
+                    <li class="nav__header">
+                        <a href="./portfolio.html" class="link">Портфолио</a>
+                    </li>
+                    <li class="nav__header">
+                        <a href="#contacts" class="link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
             <div class="connection">
                 <ul class="connection__list">
                     <li class="connection__mail">
@@ -52,16 +55,16 @@
             </div>
 
             <button type="button" class="menu__open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="connection__icons" width="24" height="16">
+          <svg class="menu__icons" width="24" height="16">
             <use href="./icons/sprite.svg#button-header-mob"></use>
           </svg>
         </button>
             <div class="mobile-nav js-menu-container" id="mobile-menu">
 
                 <button type="button" class="menu__close js-close-menu">
-                  <svg class="connection__icons" width="11" height="11">
+                  <!-- <svg class="button__close" width="11" height="11">
                     <use href="./icons/sprite.svg#close_24px"></use>
-                  </svg>
+                  </svg> -->
                 </button>
 
                 <div class="container">
@@ -81,7 +84,7 @@
                     <div class="menu__bottom">
                         <ul class="menu__contacts">
                             <li class="menu__mail">
-                                <a href="tel:+380961111111" class="link link--menu__mail">
+                                <a href="tel:+380961111111" class="link link--menu__mail current">
                               +38 096 111 11 11</a>
                             </li>
                             <li class="menu__mail">
