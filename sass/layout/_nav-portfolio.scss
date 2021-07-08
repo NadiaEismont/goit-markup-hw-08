@@ -1,14 +1,22 @@
 .nav-portfolio {
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-  &__list {
-    display: inline-block;
-    justify-content: space-evenly;
-  }
+    width: 100%;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    &__list {
+        display: inline-block;
+        justify-content: space-evenly;
+    }
 }
-.nav-portfolio .nav-portfolio__list + .nav-portfolio__list {
-  margin-left: 8px;
+
+.nav-portfolio .nav-portfolio__list+.nav-portfolio__list {
+    margin-left: 8px;
+    margin-bottom: 15px;
+}
+
+.nav-portfolio__list {
+    text-align: left;
+    align-self: left;
 }

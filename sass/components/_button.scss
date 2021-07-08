@@ -94,7 +94,8 @@
     @include background-image;
 }
 
-.menu__close:hover {
+.menu__close:hover,
+.menu__close:focus {
     background: url(../icons/close_24px-hover.svg);
     @include background-image;
 }

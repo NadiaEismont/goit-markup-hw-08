@@ -381,20 +381,20 @@
                 </ul>
             </div>
         </section>
-        <!-- <section class="section">
-        <h2 class="container__title">Постоянные клиенты</h2>
-        <div class="container">
-          <ul class="customers">
-            <li class="customers__item">
-              <a href="" class="customers__link">
-                <svg class="customers__logo">
+        <section class="section">
+            <h2 class="container__title">Постоянные клиенты</h2>
+            <div class="container">
+                <ul class="customers">
+                    <li class="customers__item">
+                        <a href="" class="customers__link">
+                            <svg class="customers__logo">
                   <use href="./icons/sprite-logo.svg#icon-group"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="customers__item">
-              <a href="" class="customers__link">
-                <svg class="customers__logo">
+                        </a>
+                    </li>
+                    <li class="customers__item">
+                        <a href="" class="customers__link">
+                            <svg class="customers__logo">
                   <use href="./icons/sprite-logo.svg#icon-group2"></use></svg
               ></a>
             </li>
@@ -424,13 +424,13 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    </main>
+      </section> 
+    </main> 
 
-    <!--copyrihgting-->
-    <!-- <footer>
+  
+    <footer>
       <div class="container footer">
-        <div class="">
+        <div class="footer__contacts">
           <a class="link logo" href="./index.html">
             <span class="logo__accent">Web</span
             ><span class="logo logo--studio">Studio</span></a
@@ -459,64 +459,63 @@
                 <svg class="join__icons">
                   <use href="./icons/sprite.svg#icon-instagram"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="join__item">
-              <a href="" class="join__link">
-                <svg class="join__icons">
+                        </a>
+                    </li>
+                    <li class="join__item">
+                        <a href="" class="join__link">
+                            <svg class="join__icons">
                   <use href="./icons/sprite.svg#icon-twitter"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="join__item">
-              <a href="" class="join__link">
-                <svg class="join__icons">
+                        </a>
+                    </li>
+                    <li class="join__item">
+                        <a href="" class="join__link">
+                            <svg class="join__icons">
                   <use href="./icons/sprite.svg#icon-facebook"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="join__item">
-              <a href="" class="join__link">
-                <svg class="join__icons">
+                        </a>
+                    </li>
+                    <li class="join__item">
+                        <a href="" class="join__link">
+                            <svg class="join__icons">
                   <use href="./icons/sprite.svg#icon-linkedin"></use>
                 </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="sbscrb">
-          <h3 class="sbscrb__title">Подпишитесь на рассылку</h3>
-          <form class="sbscrb__form">
-            <label class="sbscrb__label"
-              ><input type="email" name="email-footer" placeholder="E-mail"
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sbscrb">
+                <h3 class="sbscrb__title">Подпишитесь на рассылку</h3>
+                <form class="sbscrb__form">
+                    <label class="sbscrb__label"><input type="email" name="email-footer" placeholder="E-mail"
             /></label>
 
-            <button type="submit" class="sbscrb__button">
+                    <button type="submit" class="sbscrb__button">
               Подписаться
               <svg class="sbscrb__icon" width="24" height="24">
                 <use href="./icons/sprite.svg#icon-icon-send"></use>
               </svg>
             </button>
-          </form>
-        </div>
-      </div>
-    </footer> -->
-    <script src="./js/modal.js"></script>
-    <script>
-        (() => {
-            document
-                .querySelector(".js-speaker-form")
-                .addEventListener("submit", (e) => {
-                    e.preventDefault();
+                </form>
+            </div>
+            </div>
+            </footer> -->
+            <script src="./js/modal.js"></script>
+            <script>
+                (() => {
+                    document
+                        .querySelector(".js-speaker-form")
+                        .addEventListener("submit", (e) => {
+                            e.preventDefault();
 
-                    new FormData(e.currentTarget).forEach((value, name) =>
-                        console.log(`${name}: ${value}`)
-                    );
-                });
-        })();
-    </script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js"></script>
+                            new FormData(e.currentTarget).forEach((value, name) =>
+                                console.log(`${name}: ${value}`)
+                            );
+                        });
+                })();
+            </script>
+            <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+            <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
