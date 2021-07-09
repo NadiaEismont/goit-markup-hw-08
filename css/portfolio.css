@@ -479,8 +479,13 @@ footer {
 
 .footer {
   width: 100%;
-  flex-direction: column;
   display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -538,7 +543,6 @@ footer {
 }
 
 .join {
-  width: 100%;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -625,9 +629,14 @@ footer {
 }
 
 .sbscrb {
-  width: 100%;
   align-items: center;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .sbscrb {
+    width: 100%;
+  }
 }
 
 .sbscrb__form {
@@ -660,7 +669,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 100%;
   height: 50px;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -678,6 +686,13 @@ footer {
 @media screen and (max-width: 1199px) {
   .sbscrb__label input {
     margin-bottom: 20px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sbscrb__label input {
+    width: 358px;
   }
 }
 
