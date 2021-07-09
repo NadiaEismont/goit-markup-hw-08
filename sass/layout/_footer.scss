@@ -151,6 +151,8 @@
   margin-bottom: 60px;
   &__form {
     display: flex;
+
+    align-items: center;
     @media screen and (max-width: 1199px) {
       flex-direction: column;
     }
@@ -170,13 +172,8 @@
     margin-left: 10px;
   }
   &__label input {
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 20px;
-      width: 450px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 358px;
-    }
+    width: 100%;
+    margin-bottom: 20px;
 
     display: flex;
     align-items: center;
@@ -193,6 +190,15 @@
     padding: 15px 16px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+      width: 358px;
+    }
   }
 }
 /* .profile-block:hover::before {
