@@ -1094,7 +1094,7 @@ textarea:hover {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .footer.container {
     display: flex;
     flex-wrap: wrap;
@@ -1277,6 +1277,7 @@ textarea:hover {
 
 .sbscrb__form {
   display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1302,6 +1303,8 @@ textarea:hover {
 }
 
 .sbscrb__label input {
+  width: 100%;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1319,15 +1322,15 @@ textarea:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .sbscrb__label input {
-    margin-bottom: 20px;
     width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .sbscrb__label input {
+    margin-bottom: 0px;
     width: 358px;
   }
 }
