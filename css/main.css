@@ -1122,6 +1122,7 @@ textarea:hover {
 @media screen and (min-width: 768px) {
   .footer {
     justify-content: space-around;
+    display: flex;
   }
 }
 
@@ -1178,6 +1179,12 @@ textarea:hover {
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .join {
+    justify-content: flex-end;
+  }
 }
 
 @media screen and (min-width: 1200px) {
