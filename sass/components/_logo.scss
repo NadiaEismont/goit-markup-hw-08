@@ -9,6 +9,10 @@
   margin: auto 0;
   padding-top: 16px;
   padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 
   &__accent {
     --logo-accent: #2196f3;

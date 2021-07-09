@@ -72,7 +72,7 @@
   /* transform: translate(50%); */
 }
 .form__title {
-  weight: 700;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -116,10 +116,13 @@ textarea {
   }
 }
 .form__check {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 .form__check {
   &::before {
@@ -150,17 +153,20 @@ textarea {
 }
 
 .form__contract {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: $accent-color;
   text-decoration: underline;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 .button-form {
   width: 200px;
   height: 50px;
-  weight: 700;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;

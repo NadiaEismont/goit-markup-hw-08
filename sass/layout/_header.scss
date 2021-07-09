@@ -1,138 +1,132 @@
-        /* navigation */
-        
-        .nav {
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            justify-content: space-between;
-            &__list {
-                display: flex;
-                margin-left: 0;
-                margin-right: 0;
-                padding-left: 0;
-                list-style: none;
-                flex-wrap: wrap;
-            }
-            &__list {
-                margin-left: 93px;
-                @media screen and (max-width: 767px) {
-                    display: none;
-                }
-            }
-        }
-        
-        .connection__list {
-            display: flex;
-            margin-left: 0;
-            margin-right: 0;
-            padding-left: 0;
-            list-style: none;
-            flex-wrap: wrap;
-            @media screen and (max-width: 767px) {
-                display: none;
-            }
-            @media screen and (min-width: 767px) and (max-width:1200px) {
-                flex-direction: column;
-                align-content: center;
-                justify-content: flex-end;
-            }
-        }
-        
-        .connection__mail {
-            @media screen and (min-width: 767px) and (max-width: 1200px) {
-                margin-left: auto;
-            }
-        }
-        
-        .nav__list>.nav__header:not(:last-child) {
-            margin-right: 50px;
-        }
-        
-        .connection__list>.connection__mail:not(:last-child) {
-            @media screen and (min-width: 1200px) {
-                margin-right: 50px;
-            }
-        }
-        
-        .nav__list .current,
-        .menu__list .current,
-        .menu__mail .current {
-            color: $accent-color;
-        }
-        
-        .connection {
-            margin-left: 0;
-            margin-right: 0;
-            padding-left: 0;
-            list-style: none;
-            flex-wrap: wrap;
-            display: inline-block;
-            align-items: center;
-            margin-left: auto;
-            &__link {
-                color: $primary-text-color;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 1.14;
-                letter-spacing: 0.02em;
-                padding-top: 31px;
-                padding-bottom: 31px;
-                align-items: center;
-                display: flex;
-                @media screen and (min-width: 767px) and (max-width: 1199px) {
-                    padding-top: 5px;
-                    padding-bottom: 5px;
-                }
-            }
-            &__icons {
-                margin-right: 10px;
-                fill: currentColor;
-                height: 16px;
-            }
-        }
-        
-        .connection__mail:last-child {
-            @media screen and (min-width: 1200px) {
-                margin-right: 50px;
-            }
-        }
-        
-        .current {
-            position: relative;
-            text-decoration: none;
-        }
-        
-        .current {
-            &::after {
-                display: block;
-                position: absolute;
-                content: "";
-                width: 100%;
-                height: 4px;
-                bottom: 0;
-                left: 0;
-                background: $accent-color;
-                transition: width 0.3s ease-in-out;
-                margin-top: 28px;
-                border-radius: 2px;
-                /* transform: translateY(28px); */
-                @media screen and (max-width: 767px) {
-                    display: none;
-                }
-            }
-        }
-        
-        .current {
-            &:hover,
-            &:focus {
-                &::after {
-                    transform: scale(1.5);
-                }
-            }
-        }
-        
-        @media screen and (min-width: 768px) {
-            .menu__open {
-                display: none;
-            }
-        }
+/* navigation */
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: space-between;
+  &__list {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  &__list {
+    margin-left: 93px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.connection__list {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1200px) {
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+  }
+}
+
+.nav__list > .nav__header:not(:last-child) {
+  margin-right: 50px;
+}
+
+.connection__list > .connection__mail:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+}
+
+.nav__list .current,
+.menu__list .current,
+.menu__mail .current {
+  color: $accent-color;
+}
+
+.connection {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  display: inline-block;
+  align-items: center;
+  margin-left: auto;
+  &__link {
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    align-items: center;
+    display: flex;
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+  &__icons {
+    margin-right: 10px;
+    fill: currentColor;
+    height: 16px;
+  }
+}
+
+.connection__mail:last-child {
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
+}
+
+.current {
+  position: relative;
+  text-decoration: none;
+}
+
+.current {
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background: $accent-color;
+    transition: width 0.3s ease-in-out;
+    margin-top: 28px;
+    border-radius: 2px;
+    /* transform: translateY(28px); */
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.current {
+  &:hover,
+  &:focus {
+    &::after {
+      transform: scale(1.5);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu__open {
+    display: none;
+  }
+}
