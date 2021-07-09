@@ -1,18 +1,36 @@
+.footer.container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+    }
+}
+
 .footer {
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+    flex-direction: column;
+    display: flex;
+    // flex-basis: calc((100% - 120px) / 3);
     @media screen and (min-width: 768px) {
         // display: flex;
         // align-items: baseline;
         // justify-content: space-evenly;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
+        // display: flex;
+        // justify-content: space-between;
+        // flex-direction: column;
     }
     &__contacts {
-        margin-right: auto;
-        margin-left: auto;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 60px;
     }
     &__address {
         font-style: normal;
@@ -47,9 +65,10 @@
 
 .join {
     width: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    margin-bottom: 60px;
     &__title {
         font-weight: 700;
         font-size: 14px;
@@ -61,8 +80,9 @@
     &__list {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
+        justify-content: center;
         margin-top: 20px;
         padding-top: 20px;
     }
@@ -109,9 +129,14 @@
 }
 
 .sbscrb {
-    margin-left: auto;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 60px;
     &__form {
         display: flex;
+        @media screen and (max-width: 1199px) {
+            flex-direction: column;
+        }
     }
     &__title {
         font-weight: 700;
@@ -121,16 +146,20 @@
         text-transform: uppercase;
         color: $white;
         padding-bottom: 20px;
+        text-align: center;
     }
     &__icon {
         bottom: -1;
         margin-left: 10px;
     }
     &__label input {
+        @media screen and (max-width: 1199px) {
+            margin-bottom: 20px;
+        }
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        width: 358px;
+        width: 100%;
         height: 50px;
         background: transparent;
         border: 1px solid rgba(255, 255, 255, 0.3);
