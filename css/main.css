@@ -503,8 +503,8 @@ textarea:hover {
   color: black;
   letter-spacing: 0.03em;
   margin: auto 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1130,7 +1130,13 @@ textarea:hover {
   height: 100%;
   width: 100%;
 } */
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
+  .footer.container {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 481px) {
   .footer.container {
     display: flex;
     flex-wrap: wrap;
@@ -1350,10 +1356,17 @@ textarea:hover {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 480px) {
+  .sbscrb__label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 .sbscrb__label input {
   width: 100%;
   margin-bottom: 20px;
-  display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 50px;

@@ -5,6 +5,9 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px;
+    @media screen and (max-width: 480px) {
+        justify-content: left;
+    }
     &__list {
         display: inline-block;
         justify-content: space-evenly;
