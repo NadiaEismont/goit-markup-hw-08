@@ -16,8 +16,10 @@
 }
 
 .footer {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         flex-direction: column;
+        align-items: center;
+        
     }
     width: 100%;
     display: flex;
@@ -149,6 +151,7 @@
 .sbscrb {
     @media screen and (max-width: 1199px) {
         width: 100%;
+        margin-bottom: 60px;
     }
     align-items: center;
     @media screen and (min-width: 1200px) {
@@ -170,6 +173,9 @@
         color: $white;
         padding-bottom: 20px;
         text-align: center;
+        @media screen and (min-width: 1199px) {
+            text-align: left;
+        }
     }
     &__icon {
         bottom: -1;

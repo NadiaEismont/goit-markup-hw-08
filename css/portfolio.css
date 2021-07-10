@@ -111,7 +111,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 780px;
+    max-width: 768px;
   }
 }
 
@@ -484,9 +484,11 @@ footer {
   display: flex;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -643,6 +645,7 @@ footer {
 @media screen and (max-width: 1199px) {
   .sbscrb {
     width: 100%;
+    margin-bottom: 60px;
   }
 }
 
@@ -672,6 +675,12 @@ footer {
   color: #ffffff;
   padding-bottom: 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 1199px) {
+  .sbscrb__title {
+    text-align: left;
+  }
 }
 
 .sbscrb__icon {
@@ -731,7 +740,7 @@ footer {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav-portfolio {
     justify-content: left;
   }
@@ -763,7 +772,7 @@ footer {
 }
 
 .experience__list {
-  width: 370px;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -884,7 +893,7 @@ footer {
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .menu__link {
     font-size: 8vw;
   }
