@@ -779,6 +779,8 @@ footer {
 .experience__list {
   width: 100%;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .experience__group {
@@ -799,8 +801,11 @@ footer {
 }
 
 .description {
+  flex-grow: 1;
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+  border-top: none;
+  overflow: hidden;
 }
 
 .description > h2 {
