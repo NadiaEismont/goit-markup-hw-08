@@ -45,7 +45,8 @@
         min-width: 528px;
     }
     @media screen and (min-width: 767px) and (max-width: 1199px) {
-        top: 80%;
+        top: 0;
+        position: sticky;
     }
 }
 
