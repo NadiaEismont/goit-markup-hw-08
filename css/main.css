@@ -241,7 +241,6 @@ footer {
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .backdrop__modal {
     top: 80%;
-    position: sticky;
   }
 }
 
